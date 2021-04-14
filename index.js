@@ -5,7 +5,7 @@ inquirer
 .prompt([
     {
         type:'input',
-        question:'What is your project called?',
+        message:'What is your project called?',
         name: 'title',
     },
     {
@@ -30,6 +30,14 @@ inquirer
     },
     {
         type:'list',
-        message:''
+        message:'What liscence would you like to use?',
+        name:'license',
+        choices:['MIT','None','GNU AGPLv3'],
     }
 ])
+.then((response) => {
+    console.log(response);
+    fs.writeFile('readME.md',JSON.stringify(response,null,'\t'),(err)=>
+    err ? console.log(err) : console.log('Success')
+    );
+});
