@@ -62,12 +62,16 @@ inquirer
    - [Usage](#usage)\n
    - [Credits](#credits)\n
    - [License](#license)\n
+   <a id="installation"></a>
    ## Installation  💽\n
    ${response.installation}\n
+   <a id="usage"></a>
    ## Usage  🚮\n
    ${response.usage}\n
+   <a id="credits"></a>
    ## Credits  👨‍👩‍👧‍👦\n
    ${response.credits}\n
+   <a id="license"></a>
    ## License  💳\n
    ${response.license}\n
    ${liscenceExp}\n

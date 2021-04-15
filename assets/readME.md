@@ -1,29 +1,43 @@
 
-   ![Image](https://img.shields.io/static/v1?label=Liscence&message=GNUAGPLv3&color=blueviolet)
+   ![Image](https://img.shields.io/static/v1?label=Liscence&message=MIT&color=red)
 
-   # Party Time
+   # swaggggg
 
    ## Description  📖
 
-   No thank u
+   swaggggg
 
+   ## Table of Contents
+
+   - [Installation](#installation)
+
+   - [Usage](#usage)
+
+   - [Credits](#credits)
+
+   - [License](#license)
+
+   <a id="installation"></a>
    ## Installation  💽
 
-   Just do it lols
+   lollllll
 
+   <a id="usage"></a>
    ## Usage  🚮
 
-   Dont feel like it
+   lollslsssss
 
+   <a id="credits"></a>
    ## Credits  👨‍👩‍👧‍👦
 
-   SoloDolooo
+   ssssssssss
 
+   <a id="license"></a>
    ## License  💳
 
-   GNU AGPLv3
+   MIT
 
-   A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+   Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available.
 
 
    
