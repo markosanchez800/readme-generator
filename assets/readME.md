@@ -1,24 +1,29 @@
 
-   # WWWWW
+   ![Image](https://img.shields.io/static/v1?label=Liscence&message=GNUAGPLv3&color=blueviolet)
 
-   ## Description
+   # Party Time
 
-   wwwww
+   ## Description  📖
 
-   ## Installation
+   No thank u
 
-   wwwww
+   ## Installation  💽
 
-   ## Usage
+   Just do it lols
 
-   wwwww
+   ## Usage  🚮
 
-   ## Credits
+   Dont feel like it
 
-   
+   ## Credits  👨‍👩‍👧‍👦
 
-   ## License
+   SoloDolooo
 
-   MIT
+   ## License  💳
+
+   GNU AGPLv3
+
+   A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
 
    
