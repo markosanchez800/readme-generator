@@ -30,6 +30,21 @@ inquirer
         name:'credits',
     },
     {
+        type:'input',
+        message:'Github username?',
+        name:'gitname',
+    },
+    {
+        type:'input',
+        message:'LinkedIn username?',
+        name:'linkedname',
+    },
+    {
+        type:'input',
+        message:'Email?',
+        name:'email',
+    },
+    {
         type:'list',
         message:'What liscence would you like to use?',
         name:'license',
@@ -37,6 +52,7 @@ inquirer
     }
 ])
 .then((response) => {
+   
     console.log(response);
    
     function liscenceBadge(){
@@ -51,8 +67,10 @@ inquirer
             liscenceExp = 'A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.'
         }
     }
+   
     liscenceBadge(response.license);
-   markdownSheet = `
+  
+    markdownSheet = `
    ![Image](${liscenceImg})\n
    # ${response.title}\n
    ## Description  📖\n
@@ -60,6 +78,7 @@ inquirer
    ## Table of Contents\n
    - [Installation](#installation)\n
    - [Usage](#usage)\n
+   - [Author Links](#authorlinks)\n
    - [Credits](#credits)\n
    - [License](#license)\n
    <a id="installation"></a>
@@ -71,6 +90,11 @@ inquirer
    <a id="credits"></a>
    ## Credits  👨‍👩‍👧‍👦\n
    ${response.credits}\n
+   <a id="authorlinks"></a>
+   ## Author Links / Contact Me! 📟\n
+   [GitHub](https://github.com/${response.gitname})\n
+   [LinkedIn](https://www.linkedin.com/in/${response.linkedname}/)\n
+   [Email](mailto:${response.email})\n
    <a id="license"></a>
    ## License  💳\n
    ${response.license}\n
