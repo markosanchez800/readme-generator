@@ -53,7 +53,7 @@ inquirer
         type:'list',
         message:'What liscence would you like to use?',
         name:'license',
-        choices:['MIT','None','GNU AGPLv3'],
+        choices:['MIT','Unlicense','GNU AGPLv3','Mozilla Public License 2.0'],
     }
 ])
 
@@ -63,21 +63,24 @@ inquirer
    
     function liscenceBadge(){
         if (response.license === 'MIT') {
-            liscenceImg = 'https://img.shields.io/static/v1?label=Liscence&message=MIT&color=red'
+            liscenceImg = '[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)'
             liscenceExp = "Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available."
         } else if (response.license === 'GNU AGPLv3'){
-            liscenceImg = 'https://img.shields.io/static/v1?label=Liscence&message=GNUAGPLv3&color=blueviolet'
+            liscenceImg = '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blueviolet.svg)](https://www.gnu.org/licenses/agpl-3.0)'
             liscenceExp = 'A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.'
-        } else if (response.license === 'None'){
-            liscenceImg = 'https://img.shields.io/static/v1?label=Liscence&message=None&color=success'
+        } else if (response.license === 'Unlicense'){
+            liscenceImg = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)'
             liscenceExp = 'A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.'
+        } else if (response.license === 'Mozilla Public License 2.0'){
+            liscenceImg = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
+            liscenceExp = 'Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.'
         }
     }
    
     liscenceBadge(response.license);
   
     markdownSheet = `
-   ![Image](${liscenceImg})\n
+   ${liscenceImg}\n
    # ${response.title}\n
    ## Description  📖\n
    ${response.description}\n
@@ -94,7 +97,7 @@ inquirer
    ## Usage  🚮\n
    ${response.usage}\n
    <a id="tests"></a>
-   ## Tests  👨‍👩‍👧‍👦\n
+   ## Tests  📝\n
    ${response.tests}\n
    <a id="credits"></a>
    ## Credits  👨‍👩‍👧‍👦\n

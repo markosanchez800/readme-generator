@@ -1,11 +1,11 @@
 
-   ![Image](https://img.shields.io/static/v1?label=Liscence&message=GNUAGPLv3&color=blueviolet)
+   [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
-   # ReadMe Generator
+   # asdf
 
    ## Description  📖
 
-   This application designs a readMe file for your project based on a seriesof questions about it, it utilizes inquirer and fs as well as JavaScript to carry out its functionality
+   fdsa
 
    ## Table of Contents
 
@@ -22,38 +22,38 @@
    <a id="installation"></a>
    ## Installation  💽
 
-   ``` npm install inquirer ```                                                   then just run in terminal and answer all questions
+   adsf
 
    <a id="usage"></a>
    ## Usage  🚮
 
-   Enter all proper information when prompted and install correct packages
+   fda
 
    <a id="tests"></a>
-   ## Tests  👨‍👩‍👧‍👦
+   ## Tests  📝
 
-   ``` const writeQuestions [] ```
+   asdf
 
    <a id="credits"></a>
    ## Credits  👨‍👩‍👧‍👦
 
-   Inquirer Package
+   adsf
 
    <a id="authorlinks"></a>
    ## Author Links / Contact Me! 📟
 
-   [GitHub](https://github.com/markosanchez800)
+   [GitHub](https://github.com/fda)
 
-   [LinkedIn](https://www.linkedin.com/in/marko-sanchez-800/)
+   [LinkedIn](https://www.linkedin.com/in/sdaf/)
 
-   [Email](mailto:markosanchez800@gmail.com)
+   [Email](mailto:fdsa)
 
    <a id="license"></a>
    ## License  💳
 
-   GNU AGPLv3
+   Mozilla Public License 2.0
 
-   A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+   Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.
 
 
    
