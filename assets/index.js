@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
-//const markdowngen = require('./markdowngen');
 const fs = require('fs');
+mdMaker = "```";
 
 inquirer
 .prompt([
@@ -16,7 +16,7 @@ inquirer
     },
     {
         type:'input',
-        message:'What needs to be done to install your project/app? (detailed steps preceded and followed by three back ticks)',
+        message:'What needs to be done to install your project/app?',
         name:'installation',
     },
     {
@@ -26,7 +26,7 @@ inquirer
     },
     {
         type:'input',
-        message:'Links to your collaborators and/or third-party assets that assisted in the creation of this project/app',
+        message:'Links to your collaborators and/or third-party assets that assisted in the creation of this project/app (use []() syntax for links as necessary)',
         name:'credits',
     },
     {
@@ -46,7 +46,7 @@ inquirer
     },
     {
         type:'input',
-        message:'What tests should be run on your application and how? (detailed steps preceded and followed by three back ticks)',
+        message:'What tests should be run on your application and how?',
         name:'tests',
     },
     {
@@ -78,6 +78,8 @@ inquirer
     }
    
     liscenceBadge(response.license);
+
+   
   
     markdownSheet = `
    ${liscenceImg}\n
@@ -87,23 +89,28 @@ inquirer
    ## Table of Contents\n
    - [Installation](#installation)\n
    - [Usage](#usage)\n
+   - [Tests](#tests)\n
    - [Author Links](#authorlinks)\n
-   - [Credits](#credits)\n
+   - [Contributions](#credits)\n
    - [License](#license)\n
    <a id="installation"></a>
    ## Installation  💽\n
+   ${mdMaker}\n
    ${response.installation}\n
+   ${mdMaker}\n
    <a id="usage"></a>
    ## Usage  🚮\n
    ${response.usage}\n
    <a id="tests"></a>
    ## Tests  📝\n
+   ${mdMaker}\n
    ${response.tests}\n
+   ${mdMaker}\n
    <a id="credits"></a>
-   ## Credits  👨‍👩‍👧‍👦\n
+   ## Contributions  👨‍👩‍👧‍👦\n
    ${response.credits}\n
    <a id="authorlinks"></a>
-   ## Author Links / Contact Me! 📟\n
+   ## Author Links / Questions 📟\n
    [GitHub](https://github.com/${response.gitname})\n
    [LinkedIn](https://www.linkedin.com/in/${response.linkedname}/)\n
    [Email](mailto:${response.email})\n
