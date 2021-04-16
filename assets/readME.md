@@ -1,17 +1,19 @@
 
-   [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+   [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blueviolet.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
-   # Work Day Scheduler
+   # Music Dashboard
 
    ## Description  📖
 
-   This project was designed to track your daily activities and remind you of when to do them. By using moment.js the page tracks the day of the week as well as the current hour to color code the time blocks. Any activity entered is saved using local storage so that even on refresh your daily planner remains the same.
+   This project was designed to collect all the information about your favorite music artists and store it in one place for you to see! By utilizing JavaScript and APIs you can see music videos, top tracks, lyrics, and a follower count.
 
    ## Table of Contents
 
    - [Installation](#installation)
 
    - [Usage](#usage)
+
+   - [Tests](#tests)
 
    - [Author Links](#authorlinks)
 
@@ -24,28 +26,28 @@
 
    ```
 
-   npm i moment
+   npm install api
 
    ```
 
    <a id="usage"></a>
    ## Usage  🚮
 
-   Enter your necessary tasks in the given time slots throughout the work day.  Pressing the save button on the sidebar allows you to keep these items in local storage so your schedule is not lost throughout the day.  As time passes by the colors on the time blocks will change as well according to when that event is/was (green for coming, red for current, and grey for past)
+   Enter an artists name in the search bar and all relevent information will be returned back to you on the page, clikcing one of the ten top tracks will also return the lyrics to the chosen song
 
    <a id="tests"></a>
    ## Tests  📝
 
    ```
 
-   function timeColorCode(currentHour){  if (currentHour > 9){  nineAM.setAttribute("class","col-sm-8 past");}   to confirm colors are changing
+   Enter any artist you want to see and check to see if all the correct information appears 
 
    ```
 
    <a id="credits"></a>
    ## Contributions  👨‍👩‍👧‍👦
 
-   No Collaborators on this Project
+   [Patricks Github](https://github.com/pattymcpat)  
 
    <a id="authorlinks"></a>
    ## Author Links / Questions 📟
@@ -59,9 +61,9 @@
    <a id="license"></a>
    ## License  💳
 
-   Unlicense
+   GNU AGPLv3
 
-   A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.
+   A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 
    
