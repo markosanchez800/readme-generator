@@ -1,11 +1,11 @@
 
    ![Image](https://img.shields.io/static/v1?label=Liscence&message=GNUAGPLv3&color=blueviolet)
 
-   # Cool Project
+   # ReadMe Generator
 
    ## Description  📖
 
-   Pretty cool project
+   This application designs a readMe file for your project based on a seriesof questions about it, it utilizes inquirer and fs as well as JavaScript to carry out its functionality
 
    ## Table of Contents
 
@@ -22,17 +22,22 @@
    <a id="installation"></a>
    ## Installation  💽
 
-   Some stuff
+   ``` npm install inquirer ```                                                   then just run in terminal and answer all questions
 
    <a id="usage"></a>
    ## Usage  🚮
 
-   Some more stuff
+   Enter all proper information when prompted and install correct packages
+
+   <a id="tests"></a>
+   ## Tests  👨‍👩‍👧‍👦
+
+   ``` const writeQuestions [] ```
 
    <a id="credits"></a>
    ## Credits  👨‍👩‍👧‍👦
 
-   Solo work
+   Inquirer Package
 
    <a id="authorlinks"></a>
    ## Author Links / Contact Me! 📟

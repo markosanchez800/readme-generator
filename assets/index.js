@@ -16,7 +16,7 @@ inquirer
     },
     {
         type:'input',
-        message:'What needs to be done to install your project/app?',
+        message:'What needs to be done to install your project/app? (detailed steps preceded and followed by three back ticks)',
         name:'installation',
     },
     {
@@ -26,7 +26,7 @@ inquirer
     },
     {
         type:'input',
-        message:'Link your collaborators and/or third-party assets that assisted in the creation of this project/app',
+        message:'Links to your collaborators and/or third-party assets that assisted in the creation of this project/app',
         name:'credits',
     },
     {
@@ -36,7 +36,7 @@ inquirer
     },
     {
         type:'input',
-        message:'LinkedIn username?',
+        message:'LinkedIn username? (word breaks separated by - symbol)',
         name:'linkedname',
     },
     {
@@ -45,12 +45,18 @@ inquirer
         name:'email',
     },
     {
+        type:'input',
+        message:'What tests should be run on your application and how? (detailed steps preceded and followed by three back ticks)',
+        name:'tests',
+    },
+    {
         type:'list',
         message:'What liscence would you like to use?',
         name:'license',
         choices:['MIT','None','GNU AGPLv3'],
     }
 ])
+
 .then((response) => {
    
     console.log(response);
@@ -87,6 +93,9 @@ inquirer
    <a id="usage"></a>
    ## Usage  🚮\n
    ${response.usage}\n
+   <a id="tests"></a>
+   ## Tests  👨‍👩‍👧‍👦\n
+   ${response.tests}\n
    <a id="credits"></a>
    ## Credits  👨‍👩‍👧‍👦\n
    ${response.credits}\n
